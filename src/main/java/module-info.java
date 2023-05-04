@@ -6,7 +6,12 @@ module phuc.work.curriculumvitaebuilder {
     requires com.dlsc.formsfx;
     requires org.kordamp.bootstrapfx.core;
     requires com.almasb.fxgl.all;
+    requires java.mail;
+    requires io.github.cdimascio.dotenv.java;
 
     opens phuc.work.curriculumvitaebuilder to javafx.fxml;
+    opens phuc.work.curriculumvitaebuilder.controller to javafx.fxml;
+    opens phuc.work.curriculumvitaebuilder.utilities to java.base, java.compiler;
     exports phuc.work.curriculumvitaebuilder;
+    exports phuc.work.curriculumvitaebuilder.controller;
 }

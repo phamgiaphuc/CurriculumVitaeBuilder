@@ -25,7 +25,7 @@ Label
     -fx-font-size: 38;
 }
 
-.welcome{
+.sign-up-form{
     -fx-font-family: AppleGothic, sans-serif;
     -fx-font-size: 18;
 }
@@ -55,18 +55,8 @@ TextField
 /*
 Button
 */
-.forgot_pw{
-    -fx-background-color: transparent;
-    -fx-text-fill: #DC143C;
-    -fx-font-family: AppleGothic, sans-serif;
-    -fx-font-size: 18;
-}
 
-.forgot_pw: hover{
-    -fx-text-fill: #0000FF;
-}
-
-.sign_in{
+.sign_up{
     -fx-background-color: white;
     -fx-border-color: black;
     -fx-border-radius: 4px;
@@ -76,12 +66,12 @@ Button
     -fx-font-size: 18;
 }
 
-.sign_in: hover {
+.sign_up: hover {
     -fx-background-color: lightgrey;
     -fx-background-radius: 5px;
 }
 
-.sign_in: pressed {
+.sign_up: pressed {
     -fx-background-color: grey;
     -fx-background-radius: 5px;
 }
