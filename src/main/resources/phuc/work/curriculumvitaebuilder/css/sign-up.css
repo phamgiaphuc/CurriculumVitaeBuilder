@@ -1,0 +1,77 @@
+/*
+Background
+*/
+
+.background{
+    -fx-background-image: url("images/background.png");
+    -fx-background-radius: 0 0 25px 25px;
+}
+
+.background-center{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 26px;
+    -fx-border-color: black;
+    -fx-border-radius: 25px;
+    -fx-border-width: 3px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+
+/*
+Label
+*/
+
+.app_name{
+    -fx-font-family: AppleGothic, sans-serif;
+    -fx-font-size: 38;
+}
+
+.sign-up-form{
+    -fx-font-family: AppleGothic, sans-serif;
+    -fx-font-size: 18;
+}
+
+.simple_label{
+    -fx-font-family: AppleGothic, sans-serif;
+    -fx-font-size: 20;
+}
+
+/*
+TextField
+*/
+
+.simple_textfield{
+    -fx-background-color: transparent;
+    -fx-border-color: black;
+    -fx-border-radius: 5px;
+    -fx-border-width: 2px;
+    -fx-font-family: AppleGothic, sans-serif;
+    -fx-font-size: 18;
+}
+
+.simple_textfield: hover{
+    -fx-background-color: lightgrey;
+}
+
+/*
+Button
+*/
+
+.sign_up{
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-radius: 4px;
+    -fx-border-width: 2px;
+    -fx-background-radius: 5px;
+    -fx-font-family: AppleGothic, sans-serif;
+    -fx-font-size: 18;
+}
+
+.sign_up: hover {
+    -fx-background-color: lightgrey;
+    -fx-background-radius: 5px;
+}
+
+.sign_up: pressed {
+    -fx-background-color: grey;
+    -fx-background-radius: 5px;
+}

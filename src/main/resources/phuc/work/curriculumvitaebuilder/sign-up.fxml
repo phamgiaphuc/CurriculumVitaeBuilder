@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="770.0" maxWidth="550.0" minHeight="770.0" minWidth="550.0" prefHeight="770.0" prefWidth="550.0" styleClass="background" stylesheets="@css/sign-up.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="phuc.work.curriculumvitaebuilder.controller.SignUp">
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutX="50.0" layoutY="85.0" prefHeight="600.0" prefWidth="450.0" styleClass="background-center">
+               <children>
+                  <Pane prefHeight="150.0" prefWidth="444.0">
+                     <children>
+                        <Label layoutX="18.0" layoutY="47.0" styleClass="app_name" text="Curriculum Vitae Builder" textAlignment="CENTER" />
+                        <Label layoutX="166.0" layoutY="123.0" prefHeight="26.0" prefWidth="112.0" styleClass="sign-up-form" text="Sign-up form" textAlignment="CENTER" underline="true" />
+                     </children>
+                  </Pane>
+                  <Label styleClass="simple_label" text="Username">
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </Label>
+                  <TextField promptText="Enter the username" styleClass="simple_textfield">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="9.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <HBox prefHeight="30.0" prefWidth="444.0">
+                     <children>
+                        <Label prefHeight="30.0" prefWidth="306.0" styleClass="simple_label" text="Password - at least 8 characters">
+                           <font>
+                              <Font name="Arial" size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" right="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <PasswordField promptText="Enter the password" styleClass="simple_textfield">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="6.0" />
+                     </VBox.margin>
+                  </PasswordField>
+                  <Label prefHeight="38.0" prefWidth="130.0" styleClass="simple_label" text="Email address">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <PasswordField promptText="Enter the password" styleClass="simple_textfield">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="6.0" />
+                     </VBox.margin>
+                  </PasswordField>
+                  <Pane prefHeight="100.0" prefWidth="444.0">
+                     <children>
+                        <Button layoutX="236.0" layoutY="14.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" styleClass="sign_up" text="Cancel" onMouseClicked="#onCancelButtonClick" />
+                        <Button layoutX="58.0" layoutY="14.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" styleClass="sign_up" text="Sign up" />
+                     </children>
+                  </Pane>
+               </children></VBox>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
