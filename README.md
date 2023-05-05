@@ -46,7 +46,7 @@
 
 ### 2. Slf4j
 - Add **this code** to your **pom.xml file**
-```markdown
+```xml
     <!--Slf4j-->
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -68,7 +68,7 @@
 
 ### 3. JavaMail
 - Add **this code** to your **pom.xml file**
-```markdown
+```xml
     <!--JavaMail-->
         <dependency>
             <groupId>com.sun.mail</groupId>
@@ -84,7 +84,7 @@ and use the **Apps Access Service** to connect the program to the GMail Service.
 
 ### 4. Java Dotenv
 - Add **this code** to your **pom.xml file**
-```markdown
+```xml
     <!--Java Dotenv-->
         <dependency>
             <groupId>io.github.cdimascio</groupId>
