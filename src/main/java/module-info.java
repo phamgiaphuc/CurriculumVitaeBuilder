@@ -8,6 +8,9 @@ module phuc.work.curriculumvitaebuilder {
     requires com.almasb.fxgl.all;
     requires java.mail;
     requires io.github.cdimascio.dotenv.java;
+    requires org.slf4j;
+    requires org.slf4j.simple;
+    requires lombok;
 
     opens phuc.work.curriculumvitaebuilder to javafx.fxml;
     opens phuc.work.curriculumvitaebuilder.controller to javafx.fxml;
