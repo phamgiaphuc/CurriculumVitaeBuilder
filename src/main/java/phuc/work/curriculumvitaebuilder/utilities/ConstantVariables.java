@@ -8,4 +8,6 @@ public class ConstantVariables {
     public static String EMAIL_SERVICE_ID = Dotenv.load().get("EMAIL_SERVICE_ID");
 
     public static String EMAIL_SERVICE_PASS = Dotenv.load().get("EMAIL_SERVICE_PASSWORD");
+
+    public static String EXAMPLE_RECEIVED_EMAIL = Dotenv.load().get("EXAMPLE_RECEIVED_EMAIL");
 }
