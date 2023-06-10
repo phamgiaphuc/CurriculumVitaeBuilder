@@ -20,7 +20,7 @@
                   <Pane prefHeight="150.0" prefWidth="444.0">
                      <children>
                         <Label layoutX="18.0" layoutY="47.0" styleClass="app_name" text="Curriculum Vitae Builder" textAlignment="CENTER" />
-                        <Label layoutX="166.0" layoutY="123.0" prefHeight="26.0" prefWidth="112.0" styleClass="sign-up-form" text="Sign-up form" textAlignment="CENTER" underline="true" />
+                        <Label layoutX="166.0" layoutY="123.0" prefHeight="26.0" prefWidth="112.0" styleClass="sign-up-form" text="Sign-up form" textAlignment="CENTER" />
                      </children>
                   </Pane>
                   <Label styleClass="simple_label" text="Username">
@@ -31,7 +31,7 @@
                         <Font name="Arial" size="13.0" />
                      </font>
                   </Label>
-                  <TextField promptText="Enter the username" styleClass="simple_textfield">
+                  <TextField fx:id="USERNAME" promptText="Enter the username" styleClass="simple_textfield">
                      <VBox.margin>
                         <Insets bottom="20.0" left="20.0" right="20.0" top="9.0" />
                      </VBox.margin>
@@ -48,7 +48,7 @@
                         </Label>
                      </children>
                   </HBox>
-                  <PasswordField promptText="Enter the password" styleClass="simple_textfield">
+                  <PasswordField fx:id="PASSWORD" promptText="Enter the password" styleClass="simple_textfield">
                      <VBox.margin>
                         <Insets bottom="20.0" left="20.0" right="20.0" top="6.0" />
                      </VBox.margin>
@@ -61,15 +61,15 @@
                         <Insets left="20.0" right="20.0" />
                      </VBox.margin>
                   </Label>
-                  <PasswordField promptText="Enter the password" styleClass="simple_textfield">
+                  <TextField fx:id="GMAIL" promptText="Enter the mail" styleClass="simple_textfield">
                      <VBox.margin>
                         <Insets bottom="20.0" left="20.0" right="20.0" top="6.0" />
                      </VBox.margin>
-                  </PasswordField>
+                  </TextField>
                   <Pane prefHeight="100.0" prefWidth="444.0">
                      <children>
-                        <Button layoutX="236.0" layoutY="14.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" styleClass="sign_up" text="Cancel" onMouseClicked="#onCancelButtonClick" />
-                        <Button layoutX="58.0" layoutY="14.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" styleClass="sign_up" text="Sign up" />
+                        <Button layoutX="236.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#onCancelButtonClick" prefHeight="50.0" prefWidth="150.0" styleClass="sign_up" text="Cancel" />
+                        <Button layoutX="58.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#onSignUpButtonClick" prefHeight="50.0" prefWidth="150.0" styleClass="sign_up" text="Sign up" />
                      </children>
                   </Pane>
                </children></VBox>

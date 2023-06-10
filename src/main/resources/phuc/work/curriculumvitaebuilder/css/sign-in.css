@@ -9,9 +9,9 @@ Background
 
 .background-center{
     -fx-background-color: #ffffff;
-    -fx-background-radius: 26px;
+    -fx-background-radius: 11px;
     -fx-border-color: black;
-    -fx-border-radius: 25px;
+    -fx-border-radius: 10px;
     -fx-border-width: 3px;
     -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
 }
@@ -21,18 +21,19 @@ Label
 */
 
 .app_name{
-    -fx-font-family: AppleGothic, sans-serif;
-    -fx-font-size: 38;
+    -fx-font-family: "AppleGothic", sans-serif;
+    -fx-font-size: 38px;
 }
 
 .welcome{
-    -fx-font-family: AppleGothic, sans-serif;
-    -fx-font-size: 18;
+    -fx-font-family: "AppleGothic Bold", sans-serif;
+    -fx-font-size: 18px;
+    font-weight: bold;
 }
 
 .simple_label{
-    -fx-font-family: AppleGothic, sans-serif;
-    -fx-font-size: 20;
+    -fx-font-family: "AppleGothic", sans-serif;
+    -fx-font-size: 20px;
 }
 
 /*
@@ -45,7 +46,7 @@ TextField
     -fx-border-radius: 5px;
     -fx-border-width: 2px;
     -fx-font-family: AppleGothic, sans-serif;
-    -fx-font-size: 18;
+    -fx-font-size: 18px;
 }
 
 .simple_textfield: hover{
@@ -58,8 +59,8 @@ Button
 .forgot_pw{
     -fx-background-color: transparent;
     -fx-text-fill: #DC143C;
-    -fx-font-family: AppleGothic, sans-serif;
-    -fx-font-size: 18;
+    -fx-font-family: "AppleGothic", sans-serif;
+    -fx-font-size: 18px;
 }
 
 .forgot_pw: hover{
@@ -72,8 +73,8 @@ Button
     -fx-border-radius: 4px;
     -fx-border-width: 2px;
     -fx-background-radius: 5px;
-    -fx-font-family: AppleGothic, sans-serif;
-    -fx-font-size: 18;
+    -fx-font-family: "AppleGothic", sans-serif;
+    -fx-font-size: 18px;
 }
 
 .sign_in: hover {

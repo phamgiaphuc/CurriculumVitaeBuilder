@@ -14,7 +14,7 @@ public class EmailService {
 
     public static void main(String[] args) {
         EmailService emailService = new EmailService();
-        emailService.sendEmails("acuscodinghcm@gmail.com", "######");
+        emailService.sendEmails(ConstantVariables.EXAMPLE_RECEIVED_EMAIL, "######");
     }
 
     public void sendEmails(String receivedEmail, String verifiedCode) {
@@ -33,7 +33,7 @@ public class EmailService {
         properties.put("mail.smtp.port", "465");
         properties.put("mail.smtp.ssl.enable", "true");
         properties.put("mail.smtp.auth", "true");
-        // Get the Session object.// and pass username and password
+        // Get the session object and pass username and password
         Session session = Session.getInstance(properties, new javax.mail.Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication() {
                 return new PasswordAuthentication(EMAIL_SERVICE_ID, EMAIL_SERVICE_PASS);
@@ -54,12 +54,12 @@ public class EmailService {
             message.setText(String.format("Your verified code is %s. Please enter this to finish the signup process.", verifiedCode), "UTF-8");
             // Set Date: the sending date
             message.setSentDate(new Date());
-            log.info("<Email Service - sendEmails>: Sending message...");
+            log.info(String.format("<EmailService - sendEmails>: Sending message to %s ...", receivedEmail));
             // Send message
             Transport.send(message);
-            log.info("<Email Service - sendEmails>: Sending message successfully");
+            log.info(String.format("<EmailService - sendEmails>: Sending message to %s successfully", receivedEmail));
         } catch (MessagingException messagingException) {
-            log.info(String.format("<Email Service - sendEmails>: %s", messagingException));
+            log.info(String.format("<EmailService - sendEmails>: %s", messagingException));
         }
     }
 }

@@ -20,7 +20,7 @@
                   <Pane prefHeight="150.0" prefWidth="444.0">
                      <children>
                         <Label layoutX="18.0" layoutY="47.0" styleClass="app_name" text="Curriculum Vitae Builder" textAlignment="CENTER" />
-                        <Label layoutX="69.0" layoutY="123.0" prefHeight="26.0" prefWidth="305.0" styleClass="welcome" text="Welcome! Please sign in to continue" textAlignment="CENTER" />
+                        <Label layoutX="85.0" layoutY="121.0" prefHeight="26.0" prefWidth="275.0" styleClass="welcome" text="Welcome! Please sign in to continue" textAlignment="CENTER" />
                      </children>
                   </Pane>
                   <Label styleClass="simple_label" text="Username or email address">
@@ -66,7 +66,7 @@
                               <Font name="Arial" size="13.0" />
                            </font>
                         </Label>
-                        <Button layoutX="148.0" layoutY="125.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" styleClass="sign_in" text="Sign up" onMouseClicked="#onSignUpButtonClick"/>
+                        <Button layoutX="148.0" layoutY="125.0" mnemonicParsing="false" onMouseClicked="#onSignUpButtonClick" prefHeight="50.0" prefWidth="150.0" styleClass="sign_in" text="Sign up" />
                      </children>
                   </Pane>
                </children></VBox>
